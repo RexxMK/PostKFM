@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts fra Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="https://kit.fontawesome.com/0396285b10.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleAndreSider.css">
+    <script src="burgerscript.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> <!--Animationer fra https://michalsnik.github.io/aos/-->
+    <title>Kristian F. Møller - Aarhus' hyggeligeste boghandel</title>
+
+</head>
+
+<body> <!---->
+    <header>
+        <!--Logo-->
+        <div class="header">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="img/logo-ny-grøn.svg" alt="Kristian F. Møllers logo">
+                </a>
+            </div>
+            <!--Navigation-->
+            <nav>
+                <ul>
+                    <li class="dropdown"> <!--Inpireret af løsning på https://www.w3schools.com/howto/howto_css_dropdown.asp-->
+                        <a href="404.html">Find bøger <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                        <div class="dropdownContent">
+                            <a href="404.html">Skønlitteratur</a>
+                            <a href="404.html">Faglitteratur</a>
+                            <a href="404.html">Engelske bøger</a>
+                            <a href="404.html">Børne- og ungdomsbøger</a>
+                            <a href="inspiration.html">Inspiration</a>
+                        </div>
+                    </li>
+                    <li >
+                        <a href="laeseklubber.html">Læseklubber</a>
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="404.html">Om os</a></li>
+                </ul>
+            </nav>
+
+            <!--Ikoner-->
+            <div class="ikoner">
+                <div><i class="fa-solid fa-2x  fa-magnifying-glass"></i></div>
+                <div><i class="fa-solid fa-2x  fa-heart"></i></div>
+                <div><i class="fa-solid fa-2x  fa-basket-shopping"></i></div>
+            </div>
+        </div>
+
+        <!--Header på mobil-->
+        <div id="headerMobil">
+            <div id="overlayNav" class="overlay">
+                
+                <!--Menupunkter--> 
+                <div class="overlayMenuPunkter"> 
+                  <div class="logoMobilMenu"><a href="index.html"><img src="img/logo-ny-grøn.svg" alt="Kristian F. Møllers logo"></a></div>
+
+                    <a href="404.html">Find bøger</a> 
+                    <a href="laeseklubber.html">Læseklubber</a> 
+                    <a href="events.html">Events</a> 
+                    <a href="404.html">Om os</a>
+                </div> 
+            </div>
+        
+        <!--Element der åbner/lukker menuen--> 
+            <div id="burgerIkon">
+                
+                <!--Ikonet - laves af div'er der styles og placeres i CSS-->
+                <div id="burgerBog">
+                    <div id="bogRyg"></div>
+                    <div id="bogOver"></div>
+                    <div id="bogUnder"></div>
+                    <div id="bogHoejre"></div>
+                    <div id="bogVenstre"></div>
+                </div>
+            </div>
+            <!--1/4-Cirkel-->
+            <div id="burgerCirkel">
+                <img src="img/burgerCirkel.svg" alt="hvid kvart cirkel baggrund">
+            </div>        
+        </div>    
+        
+    </header>
+
+    <main>
+
+        <!--EVENTS I MAJ-->
+       <section class="eventMaaned">
+            <h1 class="overskriftCentrer">Events i maj</h1>
+            <div class="eventFlex">
+                <!--Event maj 1-->
+                <div class="eventKort">
+                    <!--Event cover-billede som background image i CSS-->
+                    <div
+                        class="eventBillede" id="maj1">
+                    </div>
+
+                    <div>
+                        <!--Dato og eventtitel-->
+                        <h2>14. maj - Jesper Wung-Sung</h2>
+
+                        <!--Kort eventbeskrivelse-->
+                        <p>Kom og hør Jesper Wung-Sung, når han interviewes af Puk
+                            Qvortrup om sin bog 'Ud af ti mænd'.</p>
+                    </div>
+                    
+                    <!--Tid og Knap-->
+                    <div class="eventTidKnap">
+                        <!--Tid-->
+                        <div class="eventTidIkon">
+                            <i class="fa-regular fa-2x fa-clock" ></i>  <!--fontawesome-ikon-->
+                            <h2>kl. 11:00</h2>
+                        </div>
+
+                        <!--lilleCTA-knap til eventbeskrivelse-->
+                        <div>
+                            <form action="eventbeskrivelse.html"> <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/--> 
+
+                                <button type="submit" class="lilleCTA">Detaljer</button> 
+        
+                              </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Event maj 2-->
+                <div class="eventKort">
+                    <!--Event cover-billede som background image i CSS-->
+                    <div
+                        class="eventBillede" id="maj2">
+                    </div>
+
+                    <div>
+                        <!--Dato og eventtitel-->
+                        <h2>15. maj - Kim Blæsbjerg</h2>
+                    
+                        <!--Kort eventbeskrivelse-->
+                        <p>Interviewes af Karoline Kjær Hansen om sin bog 
+                            'De bedste familier'. </p>
+                    </div>
+                    
+                    <!--Tid og Knap-->
+                    <div class="eventTidKnap">
+                        <!--Tid-->
+                        <div class="eventTidIkon">
+                            <i class="fa-regular fa-2x fa-clock" ></i>  <!--fontawesome-ikon-->                            
+                            <h2>kl. 12:00</h2>
+                        </div>
+
+                        <!--lilleCTA-knap til eventbeskrivelse-->
+                        <div>
+                            <form action="eventbeskrivelse.html"> <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/--> 
+
+                                <button type="submit" class="lilleCTA">Detaljer</button> 
+        
+                              </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Event maj 3-->
+                <div class="eventKort">
+                    <!--Event cover-billede som background image i CSS-->
+                    <div
+                        class="eventBillede" id="maj3">
+                    </div>
+
+                    <div>
+                        <!--Dato og eventtitel-->
+                        <h2>15. maj - Christina Hesselholdt</h2>
+                    
+                        <!--Kort eventbeskrivelse-->
+                        <p>Interviewet af Stefan Kjerkegaard om sin bog 
+                            'Til lyden af sin egen tromme'. </p>
+                    </div>
+                    
+                    <!--Tid og Knap-->
+                    <div class="eventTidKnap">
+                        <!--Tid-->
+                        <div class="eventTidIkon">
+                            <i class="fa-regular fa-2x fa-clock" ></i>  <!--fontawesome-ikon-->                            
+                            <h2>kl. 13:00</h2>
+                        </div>
+
+                        <!--lilleCTA-knap til eventbeskrivelse-->
+                        <div>
+                            <form action="eventbeskrivelse.html"> <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/--> 
+
+                                <button type="submit" class="lilleCTA">Detaljer</button> 
+        
+                              </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Event maj 4-->
+                <div class="eventKort">
+                    <!--Event cover-billede som background image i CSS-->
+                    <div
+                        class="eventBillede" id="maj4">
+                    </div>
+
+                    <div>
+                        <!--Dato og eventtitel-->
+                        <h2>17. maj - Katrine Marie Guldager</h2>
+                    
+                        <!--Kort eventbeskrivelse-->
+                        <p>Kom og hør Katrine Marie Guldager, når hun Interviewes af Puk
+                            Qvortrup om sin bog 'Birgithe med th'. </p>
+                    </div>
+                    
+                    <!--Tid og Knap-->
+                    <div class="eventTidKnap">
+                        <!--Tid-->
+                        <div class="eventTidIkon">
+                            <i class="fa-regular fa-2x fa-clock" ></i>  <!--fontawesome-ikon-->                            
+                            <h2>kl. 11:00</h2>
+                        </div>
+
+                        <!--lilleCTA-knap til eventbeskrivelse-->
+                        <div>
+                            <form action="eventbeskrivelse.html"> <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/--> 
+
+                                <button type="submit" class="lilleCTA">Detaljer</button> 
+        
+                              </form>
+                        </div>
+                    </div>
+                </div>
+             
+                <!--Event maj 5-->
+                <div class="eventKort">
+                    <!--Event cover-billede som background image i CSS-->
+                    <div
+                        class="eventBillede" id="maj5">
+                    </div>
+
+                    <div>
+                        <!--Dato og eventtitel-->
+                        <h2>20. maj - Caspar Eric</h2>
+                    
+                        <!--Kort eventbeskrivelse-->
+                        <p>Kom og hør Caspar Eric, når han interviewes af Mads Holm om sin
+                            bog 'Nye balancer'. </p>
+                    </div>
+                    
+                    <!--Tid og Knap-->
+                    <div class="eventTidKnap">
+                        <!--Tid-->
+                        <div class="eventTidIkon">
+                            <i class="fa-regular fa-2x fa-clock" ></i>  <!--fontawesome-ikon-->                            
+                            <h2>kl. 16:00</h2>
+                        </div>
+
+                        <!--lilleCTA-knap til eventbeskrivelse-->
+                        <div>
+                            <form action="eventbeskrivelse.html"> <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/--> 
+
+                                <button type="submit" class="lilleCTA">Detaljer</button> 
+        
+                              </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Event maj 6-->
+                <div class="eventKort">
+                    <!--Event cover-billede som background image i CSS-->
+                    <div
+                        class="eventBillede" id="maj6">
+                    </div>
+
+                    <div>
+                        <!--Dato og eventtitel-->
+                        <h2>23. maj - Anna Elisabeth Jessen</h2>
+                    
+                        <!--Kort eventbeskrivelse-->
+                        <p>Besøg fra forfatteren som fortæller om sine romaner:
+                            'Hjemsted' og 'Om hundrede år'. </p>
+                    </div>
+                    
+                    <!--Tid og Knap-->
+                    <div class="eventTidKnap">
+                        <!--Tid-->
+                        <div class="eventTidIkon">
+                            <i class="fa-regular fa-2x fa-clock" ></i>  <!--fontawesome-ikon-->                            
+                            <h2>kl. 18:30</h2>
+                        </div>
+
+                        <!--lilleCTA-knap til eventbeskrivelse-->
+                        <div>
+                            <form action="eventbeskrivelse.html"> <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/--> 
+
+                                <button type="submit" class="lilleCTA">Detaljer</button> 
+        
+                              </form>
+                        </div>
+                    </div>
+                </div>
+ 
+            </div>
+       </section>
+
+       <!--EVENTS I JUNI-->
+       <section class="eventMaaned">
+        <h1 class="overskriftCentrer">Events i juni</h1>
+        <div class="eventFlex">
+
+            <!--Event juni 1-->
+            <div class="eventKort">
+                <!--Event cover-billede som background image i CSS-->
+                <div
+                    class="eventBillede" id="juni1">
+                </div>
+
+                <div>
+                    <!--Dato og eventtitel-->
+                    <h2>1. juni - John Kenn Mortensen</h2>
+                
+                    <!--Kort eventbeskrivelse-->
+                    <p>Forfatteraften med tegneren og forfatteren,
+                        som fortæller om sine bøger til børn og unge. </p>
+                </div>
+                
+                <!--Tid og Knap-->
+                <div class="eventTidKnap">
+                    <!--Tid-->
+                    <div class="eventTidIkon">
+                        <i class="fa-regular fa-2x fa-clock" ></i>  <!--fontawesome-ikon-->                        
+                        <h2>kl. 18:30</h2>
+                    </div>
+
+                    <!--lilleCTA-knap til eventbeskrivelse-->
+                    <div>
+                        <form action="eventbeskrivelse.html"> <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/--> 
+
+                            <button type="submit" class="lilleCTA">Detaljer</button> 
+    
+                          </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--Event juni 2-->
+            <div class="eventKort">
+                <!--Event cover-billede som background image i CSS-->
+                <div
+                    class="eventBillede" id="juni2">
+                </div>
+
+                <div>
+                    <!--Dato og eventtitel-->
+                    <h2>6. juni - Jeanette Sigtenborg</h2>
+
+                
+                    <!--Kort eventbeskrivelse-->
+                    <p>Gå ikke glip af bogreceptionen for børne- og ungdomstrilogien
+                        'Legendens Ridder'. </p>
+
+                </div>
+                
+                <!--Tid og Knap-->
+                <div class="eventTidKnap">
+                    <!--Tid-->
+                    <div class="eventTidIkon">
+                        <i class="fa-regular fa-2x fa-clock" ></i>  <!--fontawesome-ikon-->                       
+                        <h2>kl. 16:30</h2>
+                    </div>
+
+                    <!--lilleCTA-knap til eventbeskrivelse-->
+                    <div>
+                        <form action="eventbeskrivelse.html"> <!--Inspiration til knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/--> 
+
+                            <button type="submit" class="lilleCTA">Detaljer</button> 
+    
+                          </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--Event juni pladsholder-->
+            <div class="eventKort">
+            </div>
+
+        </div>
+   </section>
+
+    </main>
+
+    <footer>
+        <!--INSTAGRAM BANNER-->
+  
+        <section class="toKolonnerInsta">
+          <div id="toKolonnerInstaTekst">
+            <h1>Få seneste nyt!</h1>
+            <h2>Følg os på Instagram og hold dig opdateret om de seneste</h2>
+            <div id="instagramUnderpunkter">
+              <h2>- spændende udgivelser</h2>
+              <h2>- kommende events</h2>
+              <h2>- anbefalinger</h2>
+              <h2>- og tilbud i butikken</h2>
+            </div>
+            <div id="SoMe">
+              <div>
+                <a href="https://www.facebook.com/KFMboghandleren"><img src="img/facebookLogo.svg" alt="facebook link"></a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/kfmboghandleren/"><img src="img/instagramLogo.svg" alt="instagram link"></a>
+              </div>
+              <div>
+                <h2>@kfmboghandleren</h2>
+                <h2>#kfmboghandleren</h2>
+              </div>
+            </div>
+          </div>
+          <div id="toKolonnerInstaBillede">
+            <!--Her kan bruges id-->
+            <img src="gif/instaForeverAnimation.gif" alt="Instagram animation - billede bliver liket">
+          </div>
+        </section>
+  
+        <!--footerInfo-->
+  
+        <section class="footer">
+          <div>
+            <!--KONTAKT-->
+            <h2>Kontakt</h2>
+            <ul>
+              <!--Link til google maps-->
+              <li>
+                <a
+                  href="https://www.google.com/maps/place/BOGhandleren+Aarhus+Kristian+F.+M%C3%B8ller/@56.1571563,10.2080602,18.83z/data=!4m6!3m5!1s0x464c3f96b15cfa77:0xf0544d29e5ef7ee1!8m2!3d56.157166!4d10.2087622!16s%2Fg%2F1td4hqmd"
+                  >adresse: store torv 5, aarhus c</a
+                >
+              </li>
+              <!--telefonlink-->
+              <li><a href="tel:+4586130699">tlf: +45 86 13 06 99</a></li>
+              <!--mail link-->
+              <li><a href="mailto:kfm@kfm.dk">mail: kfm@kfm.dk</a></li>
+              <!--evt CVR link-->
+              <li>
+                <a
+                  href="https://datacvr.virk.dk/enhed/virksomhed/13901880?fritekst=kristian%20f%20m%C3%B8ller&sideIndex=0&size=10"
+                  >cvr: 13901880</a
+                >
+              </li>
+            </ul>
+          </div>
+  
+          <div>
+            <!--ÅBNINGSTIDER-->
+            <h2>Åbningstider</h2>
+            <div id="aabningstider">
+              <div id="aabningstiderVenstre">
+                <ul>
+                  <!--Ugedage (venstrestillet)-->
+                  <li>Man-tors:</li>
+                  <li>Fredag:</li>
+                  <li>Lørdag:</li>
+                </ul>
+              </div>
+  
+              <div id="aabningstiderHoejre">
+                <ul>
+                  <!-- Tider (højrestillet)-->
+                  <li>10-18</li>
+                  <li>10-19</li>
+                  <li>10-17</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+          <div>
+            <!--GENERELT-->
+            <h2>Generelt</h2>
+            <ul>
+              <li><a href="">nyhedsbrev</a></li>
+              <li><a href="">handelsbetingelser</a></li>
+              <li><a href="">returnering</a></li>
+              <li><a href="">cookiepolitik</a></li>
+              <li><a href="">persondatapolitik</a></li>
+            </ul>
+          </div>
+  
+          <div>
+            <!--OM OS-->
+            <h2>Om os</h2>
+            <p>
+              Vi elsker bøger! Vi læser alle med stor fornøjelse og vi står altid
+              klar i butikken til at hjælpe dig med personlig vejledning og
+              anbefalinger.
+            </p>
+            <br>
+            <p>
+              Kom forbi vores lille hyggelige boghandel i hjertet af Aarhus -
+              Måske du møder din nye yndlingsbog!
+            </p>
+          </div>
+        </section>
+      </footer>
+    
+    <!--Parallax-effekt fra https://michalsnik.github.io/aos/ kaldes-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script> 
+</body>
+</html>

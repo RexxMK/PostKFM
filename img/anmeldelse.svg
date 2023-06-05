@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 219 114">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #f9dc5c;
+      }
+
+      .cls-3 {
+        fill: #2a3c24;
+      }
+
+      .cls-2 {
+        font-family: Arial-BoldMT, Arial;
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      .cls-2, .cls-4 {
+        isolation: isolate;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+
+      .cls-7 {
+        letter-spacing: -.04em;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-6" x="18" y="9" width="40" height="40"/>
+    </clipPath>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path id="Union_1" data-name="Union 1" class="cls-3" d="m0,114v-57h198c11.6,0,21,9.4,21,21h0v36H0Zm0-57V21C0,9.4,9.4,0,21,0h33c11.6,0,21,9.4,21,21v36H0Z"/>
+    <g class="cls-5">
+      <g id="Mask_Group_25" data-name="Mask Group 25">
+        <path id="star-solid" class="cls-1" d="m40.18,10.97c-.59-1.2-2.04-1.71-3.25-1.12-.49.24-.88.63-1.12,1.12l-4.87,10.02-10.88,1.61c-1.32.2-2.24,1.43-2.04,2.75.08.52.32,1,.69,1.37l7.89,7.81-1.86,11.04c-.22,1.32.68,2.57,2,2.79.53.09,1.06,0,1.54-.25l9.72-5.19,9.72,5.19c1.19.63,2.66.18,3.29-1.01.25-.47.34-1.01.25-1.54l-1.87-11.03,7.89-7.81c.95-.94.96-2.48.02-3.43-.37-.37-.85-.62-1.37-.69l-10.89-1.61-4.87-10.02Z"/>
+      </g>
+    </g>
+    <g id="Læs_anmeldelse" data-name="Læs anmeldelse" class="cls-4">
+      <text class="cls-2" transform="translate(43 81)"><tspan x="0" y="0">LÆS</tspan><tspan class="cls-7" x="34.17" y="0"> </tspan><tspan x="37.78" y="0">ANMELDELSE</tspan></text>
+    </g>
+  </g>
+</svg>

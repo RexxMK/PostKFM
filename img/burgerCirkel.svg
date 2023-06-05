@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 109">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: .8;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path id="kvartcirkel" class="cls-1" d="m108,109H0v-.5c0-7.34.73-14.67,2.2-21.87,2.84-13.88,8.39-27.06,16.33-38.8,11.78-17.44,28.36-31.1,47.74-39.31,6.56-2.78,13.39-4.89,20.37-6.32C93.67.77,100.82.03,108,0v109Z"/>
+  </g>
+</svg>

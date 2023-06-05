@@ -1,0 +1,924 @@
+/*Overskrifter der skal centreres
+og have samme top og bottom margin*/
+.overskriftCentrer {
+  text-align: center;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+/*sørger for at det første element på siden er
+100% synlig ved at lægge under headeren og
+ikke bagved*/
+main {
+  margin-top: 10vw;
+}
+
+.bogOgEventBeskrivelse {
+  margin-top: 20vw;
+}
+
+/*styrer farve på alle i'er (ikoner fra Fontawesome)*/
+i {
+  color: #2a3c24;
+}
+
+/*HTML: EVENTS*/
+.eventMaaned {
+  width: 90%;
+  margin: auto;
+}
+
+/*Flexer de forskellige events*/
+.eventFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*Justering af width på hvert event i oversigten,
+så tekst og billede aligner både til højre og venstre*/
+.eventKort {
+  width: 30%; /*30% så der er tre kort på en række*/
+}
+
+.eventFlex h2 {
+  text-align: center;
+}
+
+.eventFlex p {
+  margin-bottom: 1vw;
+}
+
+/*Flexer tid og lilleCTA med hinanden*/
+.eventTidKnap {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*ur-ikon og klokkeslæt flexes*/
+.eventTidIkon {
+  display: flex;
+  justify-content: left;
+  width: 60%;
+}
+
+/*Laver afstand mellem ur-ikon og klokkeslæt*/
+.eventTidIkon h2 {
+  margin-left: 4%;
+}
+
+/*Event billeder
+- billederne til hvert event indsættes som background-image,
+hvor height og cover bruges til at give alle ens størrelse/format.
+Da width er samme som den tilhørende tekst (beskrivelsen af eventet)
+fastsættes denne oppe i .eventKort */
+.eventBillede {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20vw;
+  margin-bottom: 1vw;
+}
+
+/*Event billeder i maj*/
+#maj1 {
+  background-image: url(img/event/flyvende-signering-groen.png);
+}
+
+#maj2 {
+  background-image: url(img/event/skrivemaskine-lilla.png);
+}
+
+#maj3 {
+  background-image: url(img/event/flyvende-boeger-gul.png);
+}
+
+#maj4 {
+  background-image: url(img/event/flyvende-skrivemaskiner-gul.png);
+}
+
+#maj5 {
+  background-image: url(img/event/signering-groen.png);
+}
+
+#maj6 {
+  background-image: url(img/event/balloner-lilla.png);
+}
+
+/*Event billeder i juni*/
+#juni1 {
+  background-image: url(img/event/flyvende-boeger-lilla.png);
+}
+
+#juni2 {
+  background-image: url(img/event/flyvende-boeger-gul.png);
+}
+
+/*HTML: LÆSEKLUBBER*/
+
+/*her flexes alt på siden Læseklubber, som flexes skal
+OG skal have justify-content: space-between;*/
+.laeseklubberLaeserFlex,
+.knapPrisFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.laeseklubberLaeserFlex {
+  margin-bottom: 5vw;
+}
+
+.bogCover {
+  width: 30vw;
+  margin-right: 3vw;
+}
+
+/*Styrer Læseklub 2 læser's placering
+så den centres i højden ift. læseklub 1
+og 3 på venstre side.*/
+#laeseklub2Flyt {
+  position: relative;
+  top: 25%;
+  bottom: 25%;
+}
+
+/*Læseklub 2 læser - overskrift og tekst højrestilles
+uden at det påvirker pris osv. i div'en med bogcover*/
+#laeseklub2Hoejre {
+  text-align: right;
+  margin-right: 3vw;
+}
+
+#infographicBaggrund {
+  position: relative; /*Så elementerne, der placeres med
+  position; absolute nede i media queries
+  placeres ift. infographic'ens sektions position,
+  fremfor hele body*/
+}
+
+/* BESKRIVELSER + 404 - KOLONNER */
+.toKolonnerMereMargin {
+  width: 63%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toKolonnerMereMarginBillede {
+  width: 50%;
+  margin: auto;
+}
+
+.toKolonnerMereMarginTekst {
+  width: 67%;
+  margin: auto;
+}
+
+/*BOGBESKRIVELSE*/
+
+#lillaBlob {
+  position: absolute;
+  width: 27%;
+  z-index: -10;
+  left: 0;
+  top: 0;
+  margin-left: 14%;
+  margin-top: 14%;
+}
+
+#bogbeskrivelseCover {
+  width: 17.6%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 18.4vw;
+  margin-left: 19vw;
+  z-index: 1;
+}
+
+/*EVENTBESKRIVELSE*/
+
+#eventbeskrivelseBillede {
+  width: 50%;
+}
+
+#eventbeskrivelseTekst {
+  width: 50%;
+}
+
+#eventbeskrivelseTekst p {
+  width: 70%;
+}
+
+#gulBlob {
+  position: absolute;
+  width: 36%;
+  z-index: -10;
+  left: 0;
+  top: 0;
+  margin-left: 9.7%;
+  margin-top: 14.5%;
+}
+
+#eventbeskrivelseCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  margin-left: 13%;
+  margin-top: 18.5%;
+  z-index: 1;
+}
+
+#gulBallon {
+  position: absolute;
+  width: 5.5%;
+  top: 0;
+  left: 0;
+  margin-top: 11%;
+  margin-left: 3%;
+}
+
+#groenBallon {
+  position: absolute;
+  width: 4.5%;
+  top: 0;
+  left: 0;
+  margin-top: 40%;
+  margin-left: 7%;
+}
+
+#lillaBallon {
+  position: absolute;
+  width: 7%;
+  top: 0;
+  right: 0;
+  margin-top: 11%;
+  margin-right: 4.5%;
+}
+
+#beigeBallon {
+  position: absolute;
+  width: 6%;
+  top: 0;
+  right: 0;
+  margin-top: 34%;
+  margin-right: 16%;
+}
+
+#beskrivelseDatoMobil {
+  display: none;
+}
+
+/*404*/
+/*Bog animation + fejltekst*/
+#bogAnimation {
+  position: absolute;
+  width: 30%;
+  top: 0;
+  left: 0;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+
+#fejlTekst {
+  position: relative;
+  margin-top: 17%;
+  margin-left: 42%;
+}
+
+#fejlTekst h6 {
+  color: #2a3c24;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  font-size: 2.8vw;
+}
+
+#fejlTekst h1 {
+  text-align: right;
+  margin-right: 8.6vw;
+  padding-top: 2.2vw;
+}
+
+#tristSmiley {
+  width: 6%;
+  margin-left: 1.5%;
+}
+
+/*CTA + pil*/
+/*#fejlsideCTA {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 40%;
+}*/
+
+#fejlsideKnap {
+  display: flex;
+  justify-content: center;
+  margin-top: 10.5%;
+}
+
+#fejlsideHaandskrift {
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 42.2%;
+  margin-right: 11.2%;
+}
+
+
+#knapPil {
+  width: 2.5%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 43.8%;
+  margin-right: 41%;
+}
+
+/*INSPIRATIONSSIDE*/
+
+/*Inspirations intro*/
+
+#inspirationIntro {
+  margin-top: 10vw;
+  margin-bottom: 7vw;
+}
+
+#inspirationIntro .toKolonnerBillede {
+  padding: 1vw;
+}
+
+#inspirationIntro .toKolonnerTekst {
+  width: 50%;
+  margin-left: 5vw;
+}
+
+/*Rul en bog sektion*/
+#rulEnBog {
+  margin-top: 7vw;
+  margin-bottom: 7vw;
+  position: relative;
+}
+
+#rulEnBogMedKnap {
+  position: absolute;
+  width: 14vw;
+  right: 18vw;
+  top: 8vw;
+}
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+
+
+
+
+/*LAPTOP*/
+
+@media screen and (min-width: 768px) {
+  .overskriftMobil {
+    display: none;
+  }
+
+  .beskrivelsePrisMobil {
+    display: none;
+  }
+
+  /*LAESEKLUBBER*/
+
+  /*Infographic*/
+  #mobilBogklubImg {
+    display: none;
+  }
+
+  #infographicBaggrund {
+    background-image: url(img/bogklub.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: bottom;
+    background-size: 28vw 28vw;
+  }
+
+  #igHoejde {
+    height: 40vw;
+  }
+
+  /*styrer bredden for Infographic punkterne,
+    så p ved hvor den skal break*/
+  #infographicBaggrund div {
+    width: 21vw;
+  }
+
+  /*Styr positionen på det enkelte ig/infographic-punkt
+    i følgende id'er:*/
+  #igOverskrift {
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 8%;
+  }
+
+  #igHvem {
+    position: absolute;
+    top: 26%;
+    left: 11%;
+  }
+
+  #igHvornaar {
+    position: absolute;
+    top: 46%;
+    left: 5%;
+  }
+
+  #igHvorhenne {
+    position: absolute;
+    top: 64%;
+    left: 10%;
+  }
+
+  #igHvad {
+    position: absolute;
+    top: 82%;
+    left: 17%;
+  }
+
+  #igTovholder {
+    position: absolute;
+    top: 38%;
+    right: 10%;
+  }
+
+  #igHygge {
+    position: absolute;
+    top: 72%;
+    right: 13%;
+  }
+
+  #igRegistrer {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+
+  /*pilenes størrelse styres her*/
+  .igPile {
+    scale: 0.2;
+  }
+
+  /*Styr positionen på den enkelte pil i ig
+    i følgende id'er:*/
+  #igPil1 {
+    position: absolute;
+    top: 26%;
+    left: 23%;
+  }
+
+  #igPil2 {
+    position: absolute;
+    top: 55%;
+    left: 20%;
+  }
+
+  #igPil3 {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+  }
+
+  #igPil4 {
+    position: absolute;
+    top: 87%;
+    left: 30%;
+    transform: rotate(-13deg);
+  }
+
+  #igPil5 {
+    position: absolute;
+    top: 59%;
+    right: 24%;
+  }
+
+  #igPil6 {
+    position: absolute;
+    top: 86%;
+    right: 27%;
+  }
+
+  /*ikon-illustrationernes størrelse styres her*/
+  .igIkon {
+    scale: 0.4;
+  }
+
+  /*Styrer positionen på den enkelte ikon-illustration i ig
+    i følgende id'er:*/
+  #igKalender {
+    position: absolute;
+    top: 34%;
+    left: 19%;
+  }
+
+  #igKrimi {
+    position: absolute;
+    top: 79%;
+    left: 12%;
+    transform: rotate(13deg);
+    scale: 0.3;
+  }
+
+  #igFodspor {
+    position: absolute;
+    top: 88%;
+    left: 17%;
+    transform: rotate(13deg);
+    scale: 0.3;
+  }
+
+  #igUFO {
+    position: absolute;
+    top: 67%;
+    left: 1%;
+    transform: rotate(-13deg);
+  }
+
+  #igKager {
+    position: absolute;
+    top: 76%;
+    right: 8%;
+    scale: 0.2;
+  }
+
+  #igKop {
+    position: absolute;
+    top: 81%;
+    right: 13%;
+    scale: 0.2;
+  }
+
+  #rabatBlob {
+    background: url(img/rabat-blob.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3%;
+    right: -3%;
+  }
+}
+
+/*MOBIL*/
+
+@media screen and (max-width: 768px) {
+  /*Overskrifter der skal centreres
+  og have samme top og bottom margin*/
+  .overskriftCentrer {
+    text-align: center;
+    margin-bottom: 8vw;
+    margin-top: 8vw;
+  }
+
+  /*sørger for at det første element på siden er
+  100% synlig ved at lægge under headeren og
+  ikke bagved*/
+  main {
+    margin-top: 20vw;
+  }
+
+  /* BOGBESKRIVELSER + 404 - KOLONNER */
+  .toKolonnerMereMargin {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .toKolonnerMereMarginBillede {
+    width: 80%;
+    margin-bottom: 10%;
+  }
+
+  #bogbeskrivelseCover {
+    margin-left: 27.6vw;
+    margin-top: 32vw;
+    width: 45%;
+  }
+
+  #lillaBlob {
+    width: 68%;
+    margin-top: 21%;
+    margin-left: 15.7%;
+  }
+
+  .toKolonnerMereMarginTekst {
+    width: 85%;
+    padding-top: 84vw;
+  }
+
+  #bogAnimation {
+    width: 90%;
+    margin-left: 10%;
+    margin-top: 25%;
+  }
+
+  #fejlTekst {
+    margin-top: 19.5%;
+    margin-left: 15%;
+  }
+
+  #fejlTekst h6 {
+    font-size: 6vw;
+  }
+
+  #fejlTekst h1 {
+    text-align: center;
+    margin-right: 14vw;
+  }
+
+  #tristSmiley {
+    width: 6%;
+    margin-left: 1.5%;
+  }
+
+  #fejlsideHaandskrift {
+    margin-top: 154%;
+    margin-right: 0.5%;
+  }
+
+  h5 {
+    font-size: 3vw;
+  }
+
+  #knapPil {
+    width: 11%;
+    margin-top: 160%;
+    margin-right: 18%;
+  }
+
+  /*Hvis ikke class navnet bliver skrevet inden
+  hver ny teksttype, ændrer det også på teksten i footer*/
+  .toKolonnerMereMarginTekst h1, .toKolonnerMereMarginTekst
+  h2,
+  .toKolonnerMereMarginTekst p {
+    text-align: center;
+  }
+
+  .toKolonnerMereMarginTekst h2 {
+    padding-bottom: 4%;
+    padding-top: 3%;
+  }
+
+  .toKolonnerMereMarginTekst p {
+    width: 79%;
+    margin: auto;
+  }
+
+  .beskrivelsePrisLap {
+    display: none;
+  }
+
+  .knapOgPris {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 65%;
+  }
+
+  /*EVENTS (oversigten)*/
+
+  /*Justering af width på hvert event i oversigten,
+så tekst og billede aligner både til højre og venstre*/
+  .eventKort {
+    width: 100%; /*100% så der på mobilen kun vises 1 kort på en række*/
+    margin-bottom: 5vw;
+  }
+
+  .eventBillede {
+    height: 65vw;
+  }
+
+  /*EVENTBESKRIVELSE*/
+  #balloner {
+    display: none;
+  }
+
+  #eventbeskrivelseBillede {
+    width: 100%;
+  }
+
+  #eventbeskrivelseTekst {
+    width: 100%;
+    margin-top: 74vw;
+  }
+
+  #eventbeskrivelseTekst h1,
+  #eventbeskrivelseTekst h2,
+  #eventbeskrivelseTekst p {
+    text-align: center;
+  }
+
+  #eventbeskrivelseTekst h2 {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 4%;
+    padding-top: 3%;
+  }
+
+  #eventbeskrivelseTekst p {
+    width: 80%;
+    margin: auto;
+  }
+
+  #eventbeskrivelseCover {
+    margin-left: 15%;
+    margin-top: 27.9vw;
+    width: 70%;
+  }
+
+  #gulBlob {
+    width: 85%;
+    margin-top: 20vw;
+    margin-left: 7.3vw;
+  }
+
+  #beskrivelseDatoLap {
+    display: none;
+  }
+
+  #beskrivelseDatoMobil {
+    display: block;
+  }
+
+  /*LAESEKLUBBER*/
+  .laeseklubberLaeserFlex {
+    flex-wrap: wrap-reverse;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+  }
+
+  #laeseklub2Flyt {
+    flex-wrap: wrap;
+    margin-top: -30vw;
+    margin-bottom: 20vw;
+  }
+
+  .laeseklubberLaeserFlex p {
+    margin-bottom: 20vw;
+  }
+
+  .mobilCentrer {
+    text-align: center;
+  }
+
+  .bogCover {
+    margin-bottom: 10vw;
+    margin-top: -10vw;
+  }
+
+  .knapPrisFlex {
+    flex-direction: column-reverse;
+  }
+
+  /*Infographic*/
+  #infographicBaggrund,
+  #infographicBaggrund h2 {
+    margin-top: 10vw;
+  }
+
+  #mobilBogklubImg {
+    scale: 0.8;
+  }
+
+  #igOverskrift h2 {
+    margin-top: 3vw;
+  }
+
+  #igHvem h2 {
+    margin-top: -10vw;
+  }
+
+  /*styrer bredden for Infographic punkterne,
+      så p ved hvor den skal break*/
+  #infographicBaggrund div {
+    width: 80%;
+    margin: auto;
+  }
+
+  .igPile {
+    display: none;
+  }
+
+  /*ikon-illustrationernes størrelse styres her*/
+  .igIkon {
+    scale: 0.3;
+  }
+
+  /*Styrer positionen på den enkelte ikon-illustration i ig
+      i følgende id'er:*/
+  #igKalender {
+    position: absolute;
+    top: 35%;
+    right: -12%;
+  }
+
+  #igKrimi {
+    position: absolute;
+    top: 49%;
+    right: -5%;
+    transform: rotate(13deg);
+    scale: 0.15;
+  }
+
+  #igFodspor {
+    position: absolute;
+    top: 52.5%;
+    right: -12%;
+    transform: rotate(13deg);
+    scale: 0.1;
+  }
+
+  #igUFO {
+    position: absolute;
+    top: 49%;
+    right: 14%;
+    transform: rotate(-13deg);
+    scale: 0.2;
+  }
+
+  #igKager {
+    position: absolute;
+    top: 74%;
+    right: -13%;
+    scale: 0.15;
+  }
+
+  #igKop {
+    position: absolute;
+    top: 77%;
+    right: -2%;
+    scale: 0.15;
+  }
+
+  #rabatBlob {
+    background: url(img/rabat-blob.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 93%;
+    right: -45%;
+  }
+
+  /*INSPIRATIONSSIDE*/
+
+  #inspirationIntro {
+    flex-wrap: wrap-reverse;
+    overflow-x: hidden;
+  }
+
+  #inspirationIntro .toKolonnerBillede {
+    padding: 7vw;
+  }
+
+  #inspirationIntro .toKolonnerTekst {
+    width: 80%;
+  }
+
+  .overskriftLaptop {
+    display: none;
+  }
+
+  .overskriftMobil {
+    text-align: center;
+  }
+
+  /*Rul en bog*/
+  #rulEnBog {
+    padding-bottom: 30vw;
+  }
+
+  #rulEnBog h2 {
+    text-align: left;
+  }
+
+  #rulEnBog p {
+    text-align: left;
+  }
+
+  #rulEnBog div {
+    padding-bottom: 6vw;
+  }
+
+  #rulEnBogMedKnap {
+    width: 28vw;
+    right: 29vw;
+    top: 88vw;
+  }
+
+  #rulEnBogKnap {
+    position: absolute;
+    top: 0;
+    margin-top: 150vw;
+    margin-left: 17.5vw;
+  }
+}

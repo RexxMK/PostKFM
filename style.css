@@ -1,0 +1,1244 @@
+/*GENERELT*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+/*TYPOGRAFI*/
+h1,
+h2,
+h3 {
+  color: #2a3c24;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  margin-bottom: 0.8vw;
+}
+
+h1 {
+  font-size: 2.5vw;
+}
+
+h2 {
+  font-size: 1.4vw;
+}
+
+h3 {
+  font-size: 1.2vw;
+}
+
+h5 {
+  font-family: "Indie Flower", sans-serif;
+  font-size: 1vw;
+  font-weight: 100;
+}
+
+p,
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f1f1f;
+  font-size: 0.9vw;
+  line-height: 1.3vw;
+}
+
+li {
+  line-height: 1.8vw;
+}
+
+/*LINKS/KNAPPER*/
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #2a3c24;
+}
+
+.lilleCTA:hover,
+.storCTA:hover {
+  opacity: 0.7;
+}
+
+.lilleCTA {
+  font-size: 0.9vw;
+  padding: 0.5vw 1.3vw 0.5vw 1.3vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
+.storCTA {
+  font-size: 1.1vw;
+  padding: 1.3vw 3vw 1.3vw 3vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  padding: 1.2vw 2.2vw;
+}
+
+/*Inspiration til opbygning af knap fundet her: https://www.scaler.com/topics/how-to-make-a-button-link-to-another-page-in-html/*/
+.storCTA,
+.lilleCTA {
+  background-color: #f9dc5c;
+  color: #2a3c24;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 15%;
+  border-radius: 35px;
+  border: none;
+}
+
+/*LISTE*/
+ul li {
+  list-style-type: none;
+}
+
+/* TO KOLONNER */
+
+.toKolonner {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toKolonnerBillede {
+  width: 50%;
+  margin: auto;
+}
+
+.toKolonnerTekst {
+  width: 35%;
+  margin: auto;
+  z-index: 10;
+}
+
+/*INSTAGRAM BANNER*/
+footer {
+  margin-top: 10vw;
+}
+
+.toKolonnerInsta {
+  width: 65%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#toKolonnerInstaBillede {
+  position: relative;
+  width: 40%;
+  margin: auto;
+}
+
+#toKolonnerInstaTekst {
+  width: 60%;
+  margin: auto;
+}
+
+#SoMe {
+  display: flex;
+  width: 62%;
+  margin-top: 12%;
+}
+
+#SoMe img {
+  width: 80%;
+}
+
+#instagramUnderpunkter {
+  margin-top: 2vw;
+}
+
+/*BOGKARRUSEL*/
+
+.karrusel {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 2vw;
+}
+
+.karrusel h1 {
+  margin-left: 8.3vw;
+  margin-top: 6vw;
+}
+
+.bogKarrusel {
+  overflow: scroll;
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8vw;
+}
+
+.bogKarrusel::-webkit-scrollbar {
+  width: 0;
+}
+
+.karruselVenstrePil {
+  width: 2%;
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: white;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.8;
+  border-radius: 0 32px 32px 0;
+  padding-right: 1vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  z-index: 6;
+}
+
+.karruselHoejrePil{
+  width: 2%;
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: white;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.8;
+  right: 0;
+  border-radius: 32px 0 0 32px;
+  padding-left: 1vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  z-index: 6;
+}
+
+
+
+/*BOG KORT*/
+
+.bogKort {
+  width: 30%;
+  position: relative;
+  padding-left: 2.8vw;
+  padding-right: 2.8vw;
+}
+
+.bogBillede {
+  width: 14vw;
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.anmeldelse {
+  width: 71.3%;
+  position: absolute;
+  top: -3.6vw;
+  left: 2.8vw;
+  z-index: 2;
+  cursor: pointer;
+  transition: top 1s;
+}
+
+.anmeldelse:hover {
+  top: -5.5vw;
+}
+
+.bogKortTekst {
+  width: 14vw;
+  margin: auto;
+}
+
+/*HJERTE*/
+
+.favoritHjerte {
+  position: absolute;
+  z-index: 6;
+  top: -1vw;
+  right: 4.2vw;
+}
+
+.hjerteBaggrund {
+  position: absolute;
+  width: 4vw;
+  top: -0.6vw;
+  left: -0.5vw;
+}
+
+.hjerteFyldt {
+  display: none;
+  cursor: pointer;
+}
+
+.hjerteTomt {
+  cursor: pointer;
+}
+
+.favoritHjerte i {
+  position: absolute;
+  top: 0;
+}
+
+/*ANMELDELSESKORT*/
+
+.karruselErTanken {
+  position: relative;
+}
+
+#anmeldelseKort {
+  display: none;
+  position: absolute;
+  width: 33%;
+  left: 33%;
+  top: -10vw;
+  z-index: 40;
+  padding: 8vw 7vw 8vw 7vw;
+  background-image: url(img/baggrundAnmeldelse.svg);
+  background-size: cover;
+}
+
+#anmeldelseKortTekst {
+  width: 50%;
+}
+
+.lukAnmeldelse {
+  position: absolute;
+  top: 5vw;
+  right: 3vw;
+}
+
+/*FOOTER*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5.58vw;
+  padding-right: 5.58vw;
+  padding-bottom: 5.58vw;
+  margin-top: 5.58vw;
+}
+
+.footer div {
+  width: 20%;
+}
+
+.footer h2 {
+  margin-bottom: 9%;
+}
+
+.footer li {
+  list-style: none;
+}
+
+#aabningstider {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+
+#aabningstiderVenstre {
+  text-align: left;
+  width: 70%;
+}
+
+#aabningstiderHoejre {
+  text-align: right;
+  width: 30%;
+}
+
+/* LAPTOP HEADER*/
+
+.header {
+  height: 8vw;
+  background-color: white;
+  opacity: 0.8;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  z-index: 100;
+}
+
+#logo {
+  width: 4.5%;
+  margin-left: 2.5vw;
+  margin-top: 1vw;
+}
+
+nav ul {
+  display: flex;
+  position: relative;
+  top: 5.5vw;
+}
+
+nav a {
+  padding: 0vw 0vw 1vw 1vw;
+  font-size: 0.8vw;
+  font-weight: 600;
+  margin-right: 3vw;
+}
+
+nav li {
+  margin-right: 2vw;
+}
+
+header li a:hover,
+.dropdown:hover .dropbtn {
+  color: #a690a4;
+}
+
+.dropdownContent {
+  display: none; /*Indhold i dropdown viser sig ikke*/
+  position: absolute;
+  top: 2vw;
+  background-color: white;
+  z-index: 1;
+  padding-top: 2vw;
+}
+
+.dropdownContent a {
+  display: block;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block; /*Indhold vises ved dropdown*/
+}
+
+.ikoner {
+  display: flex;
+  margin-right: 2vw;
+  position: relative;
+  top: 4.5vw;
+}
+
+.ikoner div i {
+  width: 3.7vw;
+}
+
+/*Mobil BURGER*/
+
+/*BURGER IKON styling og animationer*/
+
+/*BurgerBogen lukket*/
+#burgerBog {
+  position: relative;
+  width: 33px;
+  height: 40px;
+  max-height: fit-content;
+}
+#burgerBog div {
+  background-color: #2a3c24;
+  border-radius: 30px;
+}
+
+#bogRyg {
+  position: absolute;
+  right: 0;
+  height: 33px;
+  width: 10px;
+}
+#bogOver,
+#bogUnder {
+  position: absolute;
+  right: 1px;
+  height: 7px;
+  width: 43px;
+}
+
+#bogUnder {
+  top: 26px;
+}
+
+#bogHoejre,
+#bogVenstre {
+  position: absolute;
+  right: 1px;
+  top: 14px;
+  height: 5px;
+  width: 43px;
+}
+
+/*BurgerBogen åbner - animation*/
+/*Har lært om følgende properties og måde at opstille CSS-animationer på i
+Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/learning/css-animation-14153685?u=68595258
+ og på w3schools*/
+
+#burgerBog {
+  animation: drejBog 0.6s ease-in-out;
+  animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
+  animation-fill-mode: forwards; /*Så animationen stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
+}
+
+@keyframes drejBog {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+#bogUnder {
+  animation: drejBogUnder 0.6s ease-in-out;
+  animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
+  animation-fill-mode: forwards; /*Så animationen stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
+}
+
+@keyframes drejBogUnder {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: translateX(6px) translateY(11px) rotate(-55deg);
+  }
+}
+
+#bogVenstre {
+  animation: drejBogVenstre 0.6s ease-in-out;
+  animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
+  animation-fill-mode: forwards; /*Så animationen afspiller fra 0%-100% og stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
+}
+
+@keyframes drejBogVenstre {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: translateY(12px) rotate(-45deg);
+  }
+}
+
+#bogHoejre {
+  animation: drejBogHoejre 0.6s ease-in-out;
+  animation-play-state: paused; /*Afspilles ved trigger on click i JS*/
+  animation-fill-mode: forwards; /*Så animationen stopper på sin slutposition og ikke går tilbage til udgangspunktet*/
+}
+
+@keyframes drejBogHoejre {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: translateX(-1px) translateY(3px) rotate(-20deg);
+  }
+}
+
+/*OVERLAY/CURTAIN MENU - SLIDE IN LEFT*/
+
+/*Overlay baggrund - Eksempel*/
+
+.overlay {
+  height: 100%;
+  width: 0;
+  z-index: 120;
+  position: fixed;
+  right: 0; /*Ændr 'right' til 'left' for at få SLIDE IN RIGHT*/
+  top: 0;
+  background-color: #dbecd9;
+  overflow: hidden; /*Horisontal scroll-bar BE GONE!!*/
+  transition: 0.6s; /*Samme tid som burgerBog-ikonets animation*/
+}
+
+/*Åben burgermenu-knap*/
+
+/*Burger-IKONET*/
+#burgerIkon {
+  position: fixed;
+  width: 7vw;
+  bottom: 3vw;
+  right: 3vw;
+  cursor: pointer;
+  z-index: 130;
+}
+
+/*1/4 hvid cirkel*/
+#burgerCirkel {
+  position: fixed;
+  width: 20vw;
+  bottom: -1vw;
+  right: -1vw;
+  cursor: pointer;
+  z-index: 125;
+}
+
+/*Overlay MenuPunkter*/
+.overlayMenuPunkter {
+  position: relative;
+  top: 20%;
+  margin-bottom: 5vw;
+  width: 100%;
+  text-align: left;
+}
+
+/*Logo i Mobil-menuen*/
+.logoMobilMenu {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 5vw;
+  margin-top: -20vw;
+}
+
+/*Links i overlay*/
+.overlay a {
+  padding: 7vw;
+  text-decoration: none;
+  font-size: 5vw;
+  color: #2a3c24;
+  display: block;
+  transition: 0.6s; /*Samme tid som burgerBog-ikonets animation*/
+  margin-left: 5vw;
+}
+
+.overlay a:hover {
+  color: #a690a4;
+}
+
+/*FORSIDE*/
+
+#forsideIntro {
+  height: 60vw;
+  background-image: url(img/baggrundForsideIllustration.svg);
+  background-size: cover;
+  position: relative;
+  top: -6vw;
+  left: -3vw;
+  width: 110%;
+}
+
+#forsideIntroTekst {
+  position: absolute;
+  top: 40vw;
+  left: 15vw;
+  width: 40%;
+  z-index: 15;
+}
+
+/*Baggrunde med tekstur*/
+.baggrundBeige, .baggrundGroen  {
+  background-image: url(img/BaggrundBeige.svg);
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  top: 10vw;
+  z-index: 10;
+  width: 110%;
+  height: 60vw;
+}
+
+.baggrundGroen {
+  background-image: url(img/BaggrundGroen.svg);
+}
+
+#footerBaggrund {
+  background-image: url(img/BaggrundGul.svg);
+  width: 120%;
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  left: -5vw;
+  height:24vw;
+  top: 310vw;
+  z-index: -1;
+}
+
+#laeseklubBannerBaggrund {
+  top: 120vw;
+  height: 50vw;
+}
+
+#eventBannerBaggrund {
+  top: 225vw;
+  height: 50vw;
+}
+
+/*CSS-animationer på forsiden*/
+
+#luftBallon {
+  width: 12vw;
+  position: absolute;
+  top: 13vw;
+  left: 13vw;
+  animation: 8s infinite luftBallon;
+}
+
+@keyframes luftBallon {
+  0% {
+    transform: translateY(0);
+  }
+  35% {
+    transform: translateY(1.5vw);
+  }
+  55% {
+    transform: translateY(0.5vw);
+  }
+  75% {
+    transform: translateY(1.5vw);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#planeter {
+  width: 16vw;
+  position: absolute;
+  top: 12vw;
+  left: 60vw;
+}
+
+#maane {
+  width: 9vw;
+  position: absolute;
+  top: 12vw;
+  left: 35vw;
+}
+
+#stjerneLille {
+  width: 1.5vw;
+  position: absolute;
+  top: 16vw;
+  left: 41vw;
+  animation: 5s infinite blinkendeStjerner;
+}
+
+#stjerneStor {
+  width: 3vw;
+  position: absolute;
+  top: 14vw;
+  left: 43vw;
+  animation: 2.5s infinite blinkendeStjerner;
+}
+
+@keyframes blinkendeStjerner {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  55% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#hval {
+  width: 18vw;
+  position: absolute;
+  z-index: 1;
+  top: 24vw;
+  left: 38vw;
+}
+
+#sky1 {
+  width: 13vw;
+  position: absolute;
+  top: 30vw;
+  left: 30vw;
+  z-index: 2;
+  animation: 120s infinite flyvendeSkyer;
+}
+
+@keyframes flyvendeSkyer {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(17vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#sky2 {
+  width: 13vw;
+  position: absolute;
+  top: 32vw;
+  left: 50vw;
+  z-index: 2;
+  animation: 180s infinite flyvendeSkyerModsat;
+}
+
+#sky3 {
+  width: 7vw;
+  position: absolute;
+  top: 26vw;
+  left: 57vw;
+  animation: 80s infinite flyvendeSkyerModsat;
+}
+
+#sky4 {
+  width: 6vw;
+  position: absolute;
+  top: 30vw;
+  left: 53vw;
+  z-index: 2;
+  animation: 120s infinite flyvendeSkyerModsat;
+}
+
+#sky5 {
+  width: 13vw;
+  position: absolute;
+  top: 26vw;
+  left: 35vw;
+  animation: 80s infinite flyvendeSkyer;
+}
+
+@keyframes flyvendeSkyerModsat {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-17vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#havFugle {
+  width: 18vw;
+  position: absolute;
+  top: 20vw;
+  z-index: 1;
+  left: 78vw;
+}
+
+#skib {
+  width: 8vw;
+  position: absolute;
+  top: 17vw;
+  left: 82.7vw;
+  animation: 7s infinite vippendeSkib;
+  transform-origin: bottom center;
+}
+
+@keyframes vippendeSkib {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-4deg);
+  }
+  75% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*LÆSEKLUB BANNER - FORSIDE*/
+
+#laeseklubBanner {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+#laeseklubBannerIMG {
+  width: 40%;
+}
+
+/*EVENT BANNER - FORSIDE*/
+
+#eventBanner {
+  position: relative;
+  margin-top: 10vw;
+  margin-bottom: 18vw;
+}
+
+#forsideIntroTekst {
+  position: absolute;
+  top: 40vw;
+  left: 15vw;
+  width: 40%;
+  z-index: 15;
+}
+
+#baggrundEventBanner {
+  background-image: url(img/BaggrundBeige.svg);
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  top: 10vw;
+  z-index: 10;
+  width: 110%;
+  height: 970px;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+
+
+
+
+
+/*LAPTOP*/
+
+@media screen and (min-width: 768px) {
+  #headerMobil {
+    display: none;
+  }
+
+  #baggrundsBilledeMobil {
+    display: none;
+  }
+}
+
+/*MOBIL*/
+
+@media screen and (max-width: 768px) {
+  /*GENERELT*/
+
+  h1,
+  h2,
+  h3,
+  p {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 7.2vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  h3 {
+    font-size: 3.5vw;
+  }
+
+  p,
+  li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f1f1f;
+    font-size: 3.2vw;
+    line-height: 5vw;
+  }
+
+  li {
+    line-height: 6vw;
+  }
+
+  .toKolonner {
+    flex-wrap: wrap;
+  }
+
+  .toKolonnerBillede {
+    width: 100%;
+    margin-bottom: 3vw;
+  }
+
+  .toKolonnerTekst {
+    width: 80%;
+  }
+
+  /*CTA-KNAPPER*/
+
+  .lilleCTA {
+    font-size: 2.8vw;
+    padding: 1.5vw 3vw 1.5vw 3vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+  }
+
+  .storCTA {
+    font-size: 3.7vw;
+    padding: 3vw 7vw 3vw 7vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+
+  /*HEADER*/
+
+  nav ul {
+    display: none;
+  }
+
+  .header {
+    height: 20vw;
+    background-color: white;
+    opacity: 0.8;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    z-index: 100;
+  }
+
+  .ikoner div i {
+    width: 11vw;
+  }
+
+  #logo {
+    width: 12%;
+    margin-left: 2.5vw;
+    margin-top: 1vw;
+  }
+
+  /*INSTAGRAM BANNER*/
+
+  
+
+  .toKolonnerInsta {
+    flex-wrap: wrap-reverse;
+    margin-left: 10%;
+  }
+
+  #toKolonnerInstaBillede {
+    width: 100%;
+    padding-top: 5vw;
+  }
+
+  #toKolonnerInstaTekst {
+    width: 100%;
+    padding-top: 2vw;
+  }
+
+  #toKolonnerInstaTekst h1 {
+    padding-bottom: 2%;
+  }
+
+  #toKolonnerInstaTekst h2 {
+    text-align: left;
+  }
+
+  #SoMe {
+    width: 100%;
+    margin-top: 17%;
+  }
+
+  #SoMe img {
+    width: 80%;
+  }
+
+
+  /*FOOTER*/
+    footer /*Toppen af instagram-banner*/{
+    margin-top: 8vw;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-bottom: 15vw;
+  }
+
+  .footer h2 {
+    margin-top: 6vw;
+    text-align: left;
+    margin-bottom: 4.5vw;
+  }
+
+  .footer p {
+    text-align: left;
+  }
+
+  .footer div {
+    width: 100%;
+  }
+
+  /*FORSIDE*/
+  #forsideIntro {
+    background-image: none;
+    width: 110%;
+    top: -36vw;
+    height: 200vw;
+  }
+
+  #baggrundsBilledeMobil {
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    width: 100%;
+  }
+
+  #forsideIntroTekst {
+    top: 135vw;
+    left: 15vw;
+    z-index: 15;
+    width: 70%;
+  }
+
+  #forsideIntroTekst h2 {
+    width: 70%;
+  }
+
+  /*baggrund til forsidensIntro*/
+  .baggrundBeige {
+    height: 230vw;
+  }
+
+
+  /*CSS-animationer på forsiden*/
+  #skib,
+  #havfugle,
+  #stjerneStor,
+  #stjerneLille {
+    display: none;
+  }
+
+  #luftBallon {
+    width: 25vw;
+    top: 65vw;
+    left: 13vw;
+  }
+
+  #planeter {
+    width: 45vw;
+    top: 50vw;
+    left: 50vw;
+  }
+
+  #maane {
+    width: 20vw;
+    top: 78vw;
+    left: 40vw;
+  }
+
+  #hval {
+    width: 35vw;
+    top: 105vw;
+    left: 45vw;
+  }
+
+  #sky1 {
+    width: 25vw;
+    top: 115vw;
+  }
+
+  #sky2 {
+    width: 25vw;
+    top: 120vw;
+    left: 53vw;
+  }
+
+  #sky3 {
+    width: 20vw;
+    top: 105vw;
+    left: 60vw;
+  }
+
+  #sky4 {
+    width: 17vw;
+    top: 115vw;
+    left: 75vw;
+  }
+
+  #sky5 {
+    width: 15vw;
+    top: 108vw;
+    left: 45vw;
+  }
+
+  /*BANNERE*/
+
+  #eventBanner {
+    flex-wrap: wrap-reverse;
+    margin-top: 20vw;
+    margin-bottom: 20vw;
+  }
+
+  #eventBannerIMG {
+    height: 65vw;
+  }
+
+
+  #eventBannerBaggrund {
+    top: 660vw;
+    height: 180vw;
+  }
+
+  #laeseklubBannerIMG {
+    width: 90%;
+  }
+
+  #laeseklubBannerBaggrund {
+    top: 360vw;
+    height: 180vw;
+  }
+
+  #footerBaggrund {
+    height: 188vw;
+    top: 950vw;
+  }
+
+  /*BOGKARRUSEL*/
+  .bogKarrusel {
+    padding-top: 23vw;
+  }
+  
+  .karrusel h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .bogKort {
+    padding-left: 9vw;
+    padding-right: 9vw;
+    width: 100%;
+  }
+
+  .bogBillede {
+    width: 40vw;
+  }
+
+  .bogKortTekst {
+    width: 40vw;
+  }
+
+  .bogKortTekst h2 {
+    text-align: left;
+  }
+
+  .anmeldelse {
+    width: 69%;
+    top: -10vw;
+    left: 9vw;
+  }
+
+  .anmeldelse:hover {
+    top: -16.5vw;
+  }
+
+  
+
+  .favoritHjerte {
+    top: -3.5vw;
+    right: 13.8vw;
+    
+  }
+
+  .hjerteBaggrund {
+    width: 10vw;
+    top: -0.2vw;
+    left: -1vw;
+  }
+
+  .karruselVenstrePil, .karruselHoejrePil {
+    width: 6%;
+  }
+  #laeseklubBannerIMG {
+    width: 90%;
+  }
+}
