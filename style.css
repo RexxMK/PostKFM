@@ -976,14 +976,6 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
 
   .header {
     height: 20vw;
-    background-color: white;
-    opacity: 0.8;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    top: 0;
-    z-index: 100;
   }
 
   .ikoner div i {
