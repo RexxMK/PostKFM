@@ -469,7 +469,7 @@ uden at det påvirker pris osv. i div'en med bogcover*/
 
   /*pilenes størrelse styres her*/
   .igPile {
-    scale: 0.2;
+    transform: scale(0.2);
   }
 
   /*Styr positionen på den enkelte pil i ig
@@ -496,7 +496,7 @@ uden at det påvirker pris osv. i div'en med bogcover*/
     position: absolute;
     top: 87%;
     left: 30%;
-    transform: rotate(-13deg);
+    transform: rotate(-13deg) scale(0.2);
   }
 
   #igPil5 {
@@ -511,54 +511,49 @@ uden at det påvirker pris osv. i div'en med bogcover*/
     right: 27%;
   }
 
-  /*ikon-illustrationernes størrelse styres her*/
-  .igIkon {
-    scale: 0.4;
-  }
-
   /*Styrer positionen på den enkelte ikon-illustration i ig
     i følgende id'er:*/
   #igKalender {
     position: absolute;
     top: 34%;
     left: 19%;
+    transform: scale(0.35);
   }
 
   #igKrimi {
     position: absolute;
     top: 79%;
     left: 12%;
-    transform: rotate(13deg);
-    scale: 0.3;
+    transform: rotate(13deg) scale(0.3);
   }
 
   #igFodspor {
     position: absolute;
     top: 88%;
     left: 17%;
-    transform: rotate(13deg);
-    scale: 0.3;
+    transform: rotate(13deg) scale(0.3);
   }
 
   #igUFO {
     position: absolute;
     top: 67%;
     left: 1%;
-    transform: rotate(-13deg);
+    transform: rotate(-13deg) scale(0.35);
+    
   }
 
   #igKager {
     position: absolute;
     top: 76%;
     right: 8%;
-    scale: 0.2;
+    transform: scale(0.25);
   }
 
   #igKop {
     position: absolute;
     top: 81%;
     right: 13%;
-    scale: 0.2;
+    transform: scale(0.15);
   }
 
   #rabatBlob {
@@ -567,6 +562,7 @@ uden at det påvirker pris osv. i div'en med bogcover*/
     position: absolute;
     top: 3%;
     right: -3%;
+
   }
 }
 
@@ -788,7 +784,7 @@ så tekst og billede aligner både til højre og venstre*/
   }
 
   #mobilBogklubImg {
-    scale: 0.8;
+    transform: scale(0.8);
   }
 
   #igOverskrift h2 {
@@ -810,10 +806,6 @@ så tekst og billede aligner både til højre og venstre*/
     display: none;
   }
 
-  /*ikon-illustrationernes størrelse styres her*/
-  .igIkon {
-    scale: 0.3;
-  }
 
   /*Styrer positionen på den enkelte ikon-illustration i ig
       i følgende id'er:*/
@@ -821,44 +813,42 @@ så tekst og billede aligner både til højre og venstre*/
     position: absolute;
     top: 35%;
     right: -12%;
+    transform: scale(0.25);
   }
 
   #igKrimi {
     position: absolute;
     top: 49%;
     right: -5%;
-    transform: rotate(13deg);
-    scale: 0.15;
+    transform: rotate(13deg) scale(0.15);
   }
 
   #igFodspor {
     position: absolute;
     top: 52.5%;
-    right: -12%;
-    transform: rotate(13deg);
-    scale: 0.1;
+    right: -14%;
+    transform: rotate(13deg) scale(0.15);
   }
 
   #igUFO {
     position: absolute;
     top: 49%;
     right: 14%;
-    transform: rotate(-13deg);
-    scale: 0.2;
+    transform: rotate(-13deg) scale(0.2);
   }
 
   #igKager {
     position: absolute;
     top: 74%;
     right: -13%;
-    scale: 0.15;
+    transform: scale(0.15);
   }
 
   #igKop {
     position: absolute;
     top: 77%;
     right: -2%;
-    scale: 0.15;
+    transform: scale(0.15);
   }
 
   #rabatBlob {
