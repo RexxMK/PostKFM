@@ -360,7 +360,7 @@ footer {
 .header {
   height: 8vw;
   background-color: white;
-  opacity: 0.8;
+  opacity: 0.95;
   width: 100%;
   position: fixed;
   display: flex;
