@@ -271,6 +271,7 @@ uden at det påvirker pris osv. i div'en med bogcover*/
 
 /*404*/
 /*Bog animation + fejltekst*/
+
 #bogAnimation {
   position: absolute;
   width: 30%;
@@ -325,6 +326,7 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   top: 0;
   margin-top: 42.2%;
   margin-right: 11.2%;
+  
 }
 
 
@@ -346,9 +348,13 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   margin-bottom: 7vw;
 }
 
-#inspirationIntroBaggrund {
+#inspirationIntroBaggrund, #fejlsideBaggrund {
   left: -10vw;
-  top:-2vw ;
+  top:-3vw ;
+}
+
+#fejlsideBaggrund {
+  z-index: -1;
 }
 
 #inspirationIntro .toKolonnerBillede {
@@ -669,6 +675,10 @@ uden at det påvirker pris osv. i div'en med bogcover*/
     margin-left: 15%;
   }
 
+  #fejlsideBaggrund {
+    height: 190vw;
+  }
+
   #fejlTekst h6 {
     font-size: 6vw;
   }
@@ -915,6 +925,8 @@ så tekst og billede aligner både til højre og venstre*/
   #inspirationIntroBaggrund {
     height: 168vw;
   }
+
+ 
 
   #inspirationIntro .toKolonnerBillede {
     padding: 7vw;
