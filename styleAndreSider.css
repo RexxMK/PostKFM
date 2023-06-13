@@ -129,6 +129,8 @@ OG skal have justify-content: space-between;*/
   margin-bottom: 5vw;
 }
 
+
+
 .bogCover {
   width: 30vw;
   margin-right: 3vw;
@@ -141,6 +143,12 @@ og 3 på venstre side.*/
   position: relative;
   top: 25%;
   bottom: 25%;
+}
+
+
+#baggrundInfographic {
+  top: 132vw;
+  height: 55vw;
 }
 
 /*Læseklub 2 læser - overskrift og tekst højrestilles
@@ -355,18 +363,23 @@ uden at det påvirker pris osv. i div'en med bogcover*/
 
 #inspirationIntro {
   margin-top: 10vw;
-  margin-bottom: 7vw;
+  margin-bottom: 10vw;
 }
 
 #inspirationIntroBaggrund, 
 #fejlsideBaggrund, 
 #bogBeskrivelseBaggrund, 
-#eventBeskrivelseBaggrund {
+#eventBeskrivelseBaggrund,
+#laeseklubberIntroBaggrund {
   left: -10vw;
   top:-3vw ;
 }
 
-#fejlsideBaggrund, #bogBeskrivelseBaggrund {
+#laeseklubberIntroBaggrund {
+  height: 58vw;
+}
+
+#fejlsideBaggrund, #bogBeskrivelseBaggrund  {
   z-index: -1;
 }
 
@@ -474,6 +487,8 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   #igHoejde {
     height: 40vw;
   }
+
+
 
   /*styrer bredden for Infographic punkterne,
     så p ved hvor den skal break*/
@@ -829,6 +844,17 @@ så tekst og billede aligner både til højre og venstre*/
     width: 80%;
     margin: auto;
     justify-content: center;
+  }
+
+  #laeseklubberIntroBaggrund {
+    height: 165vw;
+
+  }
+
+  #baggrundInfographic {
+    top: 557vw;
+    height: 364vw;
+    left: -5vw;
   }
 
   #laeseklub2Flyt {
