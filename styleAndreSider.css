@@ -369,8 +369,28 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   top: 8vw;
 }
 
+/*OM OS*/
 
+/*MARIANNE*/
+.gulPil{
+  position: absolute;
+  width: 4%;
+  padding: 1%;
+  top: 50%;
+  bottom: 50%;
+}
 
+#gulPilHoejre{
+  right: 0.5%;
+}
+
+#gulPilVenstre{
+  left: 0.5%;
+}
+
+.fortaellingen{
+  margin-top: -2.5vw;
+}
 
 
 /*MEDIA QUERIES*/
