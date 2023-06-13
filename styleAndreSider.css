@@ -369,6 +369,21 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   top: 8vw;
 }
 
+
+#rulEnBogHaandskrift {
+  position: absolute;
+  top: 30vw;
+  left: 19vw;
+}
+
+#pilRulEnBog {
+  position: absolute;
+  width: 3vw;
+  top: 29vw;
+  left: 15vw;
+  transform: rotate(50deg);
+}
+
 /*OM OS*/
 
 /*MARIANNE*/
@@ -930,5 +945,17 @@ så tekst og billede aligner både til højre og venstre*/
     top: 0;
     margin-top: 150vw;
     margin-left: 17.5vw;
+  }
+
+  #rulEnBogHaandskrift {
+    top: 162vw;
+    left: 10vw;
+  }
+  
+  #pilRulEnBog {
+    width: 9vw;
+    top: 150vw;
+    left: 13vw;
+    transform: rotate(150deg);
   }
 }
