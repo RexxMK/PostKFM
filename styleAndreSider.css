@@ -215,6 +215,10 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   width: 70%;
 }
 
+#eventBeskrivelseBaggrund {
+  height: 57vw;
+}
+
 #gulBlob {
   position: absolute;
   width: 36%;
@@ -354,7 +358,10 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   margin-bottom: 7vw;
 }
 
-#inspirationIntroBaggrund, #fejlsideBaggrund, #bogBeskrivelseBaggrund {
+#inspirationIntroBaggrund, 
+#fejlsideBaggrund, 
+#bogBeskrivelseBaggrund, 
+#eventBeskrivelseBaggrund {
   left: -10vw;
   top:-3vw ;
 }
@@ -772,6 +779,10 @@ så tekst og billede aligner både til højre og venstre*/
   #eventbeskrivelseTekst {
     width: 100%;
     margin-top: 74vw;
+  }
+
+  #eventBeskrivelseBaggrund {
+    height: 210vw;
   }
 
   #eventbeskrivelseTekst h1,
