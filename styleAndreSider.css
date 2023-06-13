@@ -346,6 +346,11 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   margin-bottom: 7vw;
 }
 
+#inspirationIntroBaggrund {
+  left: -10vw;
+  top:-2vw ;
+}
+
 #inspirationIntro .toKolonnerBillede {
   padding: 1vw;
 }
@@ -360,6 +365,12 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   margin-top: 7vw;
   margin-bottom: 7vw;
   position: relative;
+}
+
+#rulEnBogBaggrund {
+  left: -10vw;
+  top:155vw ;
+  height: 50vw;
 }
 
 #rulEnBogMedKnap {
@@ -901,6 +912,10 @@ så tekst og billede aligner både til højre og venstre*/
     overflow-x: hidden;
   }
 
+  #inspirationIntroBaggrund {
+    height: 168vw;
+  }
+
   #inspirationIntro .toKolonnerBillede {
     padding: 7vw;
   }
@@ -921,6 +936,11 @@ så tekst og billede aligner både til højre og venstre*/
   #rulEnBog {
     padding-bottom: 30vw;
   }
+
+  #rulEnBogBaggrund {
+  top:415vw ;
+  height: 210vw;
+}
 
   #rulEnBog h2 {
     text-align: left;
