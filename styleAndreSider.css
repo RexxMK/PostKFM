@@ -17,6 +17,8 @@ main {
   margin-top: 20vw;
 }
 
+
+
 /*styrer farve på alle i'er (ikoner fra Fontawesome)*/
 i {
   color: #2a3c24;
@@ -195,6 +197,10 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   z-index: 1;
 }
 
+#bogBeskrivelseBaggrund {
+  height: 57vw;
+}
+
 /*EVENTBESKRIVELSE*/
 
 #eventbeskrivelseBillede {
@@ -348,12 +354,12 @@ uden at det påvirker pris osv. i div'en med bogcover*/
   margin-bottom: 7vw;
 }
 
-#inspirationIntroBaggrund, #fejlsideBaggrund {
+#inspirationIntroBaggrund, #fejlsideBaggrund, #bogBeskrivelseBaggrund {
   left: -10vw;
   top:-3vw ;
 }
 
-#fejlsideBaggrund {
+#fejlsideBaggrund, #bogBeskrivelseBaggrund {
   z-index: -1;
 }
 
@@ -651,6 +657,10 @@ uden at det påvirker pris osv. i div'en med bogcover*/
     margin-left: 27.6vw;
     margin-top: 32vw;
     width: 45%;
+  }
+
+  #bogBeskrivelseBaggrund {
+    height: 259vw;
   }
 
   #lillaBlob {
