@@ -125,7 +125,9 @@ ul li {
 /*INSTAGRAM BANNER*/
 footer {
   margin-top: 10vw;
+
 }
+
 
 .toKolonnerInsta {
   width: 65%;
@@ -325,6 +327,19 @@ footer {
   padding-right: 5.58vw;
   padding-bottom: 5.58vw;
   margin-top: 5.58vw;
+  position: relative;
+}
+
+#footerBaggrund {
+  background-image: url(img/BaggrundGul.svg);
+  width: 120%;
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  left: -5vw;
+  height:24vw;
+  bottom: 0;
+  z-index: -1;
 }
 
 .footer div {
@@ -639,17 +654,6 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
   background-image: url(img/BaggrundGroen.svg);
 }
 
-#footerBaggrund {
-  background-image: url(img/BaggrundGul.svg);
-  width: 120%;
-  background-size: cover;
-  background-position: bottom;
-  position: absolute;
-  left: -5vw;
-  height:24vw;
-  top: 310vw;
-  z-index: -1;
-}
 
 #laeseklubBannerBaggrund {
   top: 120vw;
@@ -1036,6 +1040,10 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
     padding-bottom: 15vw;
   }
 
+  #footerBaggrund {
+    height: 188vw;
+  }
+
   .footer h2 {
     margin-top: 6vw;
     text-align: left;
@@ -1170,10 +1178,6 @@ Val Head's LinkedIn Learning kursus CSS Animation: https://www.linkedin.com/lear
     height: 180vw;
   }
 
-  #footerBaggrund {
-    height: 188vw;
-    top: 950vw;
-  }
 
   /*BOGKARRUSEL*/
   .bogKarrusel {
